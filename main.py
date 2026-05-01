@@ -15,8 +15,8 @@ reverse_word_index = {value: key for key, value in word_index.items()}
 
 base_dir = os.path.dirname(__file__)
 model_path = os.path.join(base_dir, "simple_rnn.keras")
+model = load_model(model_path, compile=False)
 
-model = load_model(model_path)
 
 # Step 2: Helper Functions
 # Function to decode reviews
